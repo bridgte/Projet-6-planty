@@ -12,3 +12,59 @@ Updated: 2024-02-09 10:49:57
 */
 
 /* HEADER */
+
+.e-con {
+    --padding-inline-end :0;
+    --padding-block-end :0;
+}
+/* FORMUALIRE PAGE COMMANDER */
+
+.quantity {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.quantity_button {
+    display: flex;
+    flex-direction: row;
+
+}
+
+.plus_moins {
+    display: flex;
+    flex-direction: column;
+}
+
+.bouton_ok {
+    display: flex;
+    flex-direction: row;
+    width: 100px;
+    height: 56px;
+    background-color: #e0b9b4;
+    text-align: center;
+    color: white;
+}
+
+.zero {
+    display: flex;
+    flex-direction: row;
+    width: 51px;
+    height: 56px;
+    background-color: white;
+    border-top-left-radius: 4px;
+
+}
+
+h3 {
+    font-size: 30px;
+    font-weight: 700;
+}
+
+
+
+
+
+
+
+/* FORMULAIRE PAGE NOUS RENCONTRER */
