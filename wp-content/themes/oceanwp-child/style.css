@@ -22,22 +22,27 @@ Updated: 2024-02-09 10:49:57
 .quantity {
     display: flex;
     flex-direction: row;
-    gap: 10px;
+    gap: 26px;
+    border-bottom: 1px solid white;
+    padding-bottom: 40px;
 }
 
 .quantity_button {
     display: flex;
     flex-direction: row;
+    height: 56px;
 
 }
 
 .plus_moins {
     display: flex;
     flex-direction: column;
-    
+    justify-content: center;
+    align-items: center;
 }
 
 .plus, .moins {
+    display: flex;
     width: 31px;
     height: 28px;
     background-color: #dc9f96;
@@ -94,7 +99,9 @@ h3 {
     font-weight: 700;
 }
 
-
+hr {
+    color: white;
+}
 
 
 
