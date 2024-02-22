@@ -1,5 +1,6 @@
 <?php
 // Exit if accessed directly
+
 if ( !defined( 'ABSPATH' ) ) exit;
 
 // BEGIN ENQUEUE PARENT ACTION
@@ -24,12 +25,9 @@ add_action( 'wp_enqueue_scripts', 'child_theme_configurator_css', 10 );
 // END ENQUEUE PARENT ACTION
 
 
-
 function add_extra_item_to_nav_menu($items,$args) {
-    var_dump($args->menu);
-    exit;
-    if(is_user_logged_in() && $args->menu == 2) {
-        $items .= '<li class="menu_item"><a href="'.get_site_url().'/wp-admin'.'"> admin</a></li>';
+    if(is_user_logged_in() && $args->theme_location == 'Principal') {
+        $items .= '<li class="menu_item"><a href="'.get_admin_url().'">Admin</a></li>';
     }
     return $items;
 }
