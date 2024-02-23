@@ -26,7 +26,7 @@ add_action( 'wp_enqueue_scripts', 'child_theme_configurator_css', 10 );
 
 
 function add_extra_item_to_nav_menu($items,$args) {
-    if(is_user_logged_in() && $args->theme_location == 'Principal') {
+    if(is_user_logged_in() && $args->theme_location == 'main_menu') {
         $items .= '<li class="menu_item"><a href="'.get_admin_url().'">Admin</a></li>';
     }
     return $items;
