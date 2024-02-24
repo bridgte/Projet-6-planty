@@ -11,3 +11,175 @@ Updated: 2024-02-09 10:49:57
 
 */
 
+/* HEADER */
+
+.e-con {
+    --padding-inline-end :0;
+    --padding-block-end :0;
+}
+
+.menu_item {
+    background-color: black;
+    color: black;
+}
+/* FORMUALIRE PAGE COMMANDER */
+
+.quantity {
+    display: flex;
+    flex-direction: row;
+    gap: 26px;
+    border-bottom: 1px solid white;
+    padding-bottom: 40px;
+}
+
+.quantity_button {
+    display: flex;
+    flex-direction: row;
+    height: 56px;
+
+}
+
+.plus_moins {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.plus, .moins {
+    display: flex;
+    width: 31px;
+    height: 28px;
+    background-color: #dc9f96;
+    margin: 0;
+    text-align: center;
+    color: white;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.plus {
+    border-radius: 0px 10px 0px 0px;
+    border-bottom: 1px white solid;
+}
+
+.moins {
+    border-radius: 0px 0px 10px 0px;
+}
+
+.bouton_ok {
+    display: flex;
+    flex-direction: row;
+    width: 100px;
+    height: 56px;
+    background-color: #e0b9b4;
+    text-align: center;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    margin-left: 11px;
+}
+
+.zero {
+    display: flex;
+    flex-direction: row;
+    width: 51px;
+    height: 56px;
+    background-color: white;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    text-align: center;
+    margin: 0;
+    font-size: 16px;
+    font-weight: 400;
+    align-items: center;
+    justify-content: center;
+
+}
+
+h3 {
+    font-size: 30px;
+    font-weight: 700;
+}
+
+hr {
+    color: white;
+}
+
+.column_one {
+    border-right: 1px solid white;
+    width: 430px;
+    padding-right: 45px;
+    margin-bottom: 0px;
+
+}
+
+.column_two {
+    width: 430px;
+    padding-left: 45px;
+    margin-bottom: 0px;
+}
+ .form {
+    margin-top: 55px;
+    height: 447px;
+ }
+
+table label {
+    color: white;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.wpcf7 input[type="text"],
+.wpcf7 input[type="email"],
+.wpcf7 input[type="textarea"] {
+    background-color: white;
+    border-radius: 7px;
+    margin-top: 13px;
+    margin-bottom: 30px;
+}
+
+.wpcf7 input[type="submit"] {
+    display: flex;
+    width: 198px;
+    height: 55px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    background-color: #E0B9B4;
+    margin: 30px 318px 93px 339px;  
+}
+/* FORMULAIRE PAGE NOUS RENCONTRER */
+
+.button_submit {
+    display: flex;
+    justify-content: center;
+    height: 55px;
+    align-items: flex-start;
+}
+
+.wpcf7 input[type="textarea"] {
+    width: 383px;
+    height: 237px;
+    border: 0px;
+    margin-bottom: 0px;
+}
+
+/* PAGE D'ACCUEIL*/
+
+.wp-image-31 {
+    position: relative;
+}
+.elementor-element-dca781a::before {
+    background-position: absolute;
+    background-position-x: 34.5%;
+    background-position-y: 69.5%;
+}
+
+.elementor-element-dca781a:not(.elementor-motion-effects-element-type-background) {
+    background-position-x: 65.5%;
+    background-position-y: 69.5%;
+}
+
