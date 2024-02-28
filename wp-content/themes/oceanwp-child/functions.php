@@ -26,9 +26,15 @@ add_action( 'wp_enqueue_scripts', 'child_theme_configurator_css', 10 );
 
 
 
-add_filter('wp_nav_menu_items', 'add_extra_item_to_nav_menu',10,2);
-function add_extra_item_to_nav_menu($items,$args) {
-    echo($args->theme_location);
+add_filter( 'wp_nav_menu_items', 'add_admin_menu', 10, 2);
+
+function add_admin_menu( $items, $args ) {
+    // Utilisateur connecté ou non.
+    if ( is_user_logged_in() && $args->theme_location == 'main_menu' ) {
+        // Accès à un menu admin et l'URL du tableau de bord WP et afficher le lien dans le menu
+        $items .= '<li class="menu-admin"><a href="' . admin_url() . '">Admin</a></li>';
+    }
+
     return $items;
 }
 

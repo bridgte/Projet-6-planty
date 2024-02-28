@@ -18,24 +18,49 @@ Updated: 2024-02-09 10:49:57
     --padding-block-end :0;
 }
 
+#site-logo {
+    display: flex;
+    width: 201px;
+    height: 19px;
+    padding-left: 37px;
+    padding-top: 31px ;
+}
+
+.dropdown-menu {
+    display: flex;
+    flex-direction: row;
+    gap: 77px;
+}
+
 .menu-item-54 {
     background-color: #dc9f96;
-    color: white;
     width: 236px;
     height: 80px;
 }
 
-.oceanwp-custom-menu>ul>li {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    padding: 30px 55px 30px 55px;
-    font-style: normal;
-    font-size: 16px;
-
+.menu-item-54 span {
+    color: white;
 }
+
+.text-wrap {
+    display: flex;
+    justify-content: center;
+    font-size: 16px;
+}
+
+#site-navigation-wrap {
+    right:0px;
+}
+
+.main-menu li:nth-child(2) {
+    order: 1; /* nouvel ordre du menu admin*/
+}
+
+.dropdown-menu>li>a {
+    font-size: 16px;
+}
+
+
 /* FORMUALIRE PAGE COMMANDER */
 
 .quantity {
