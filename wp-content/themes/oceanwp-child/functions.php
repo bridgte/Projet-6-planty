@@ -25,11 +25,10 @@ add_action( 'wp_enqueue_scripts', 'child_theme_configurator_css', 10 );
 // END ENQUEUE PARENT ACTION
 
 
+
+add_filter('wp_nav_menu_items', 'add_extra_item_to_nav_menu',10,2);
 function add_extra_item_to_nav_menu($items,$args) {
-    if(is_user_logged_in() && $args->theme_location == 'main_menu') {
-        $items .= '<li class="menu_item"><a href="'.get_admin_url().'">Admin</a></li>';
-    }
+    echo($args->theme_location);
     return $items;
 }
 
-add_filter('wp_nav_menu_items', 'add_extra_item_to_nav_menu',10,2);
