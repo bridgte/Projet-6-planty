@@ -60,13 +60,16 @@ Updated: 2024-02-09 10:49:57
     font-size: 16px;
 }
 
+.menu-admin a {
+    font-size: 16px;
+}
 
 /* FORMUALIRE PAGE COMMANDER */
+
 
 .quantity {
     display: flex;
     flex-direction: row;
-    gap: 40px;
     border-bottom: 1px solid white;
     padding-bottom: 30px;
     justify-content: center;
@@ -75,28 +78,21 @@ Updated: 2024-02-09 10:49:57
 
 .tasty {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     max-width: 193px;
     justify-content: center;
     align-items: center;
-}
-img {
-    display: flex;
-    flex-direction: row;
+    gap: 194px;
 }
 
 .zero {
-    display: flex;
-    flex-direction: row;
-    width: 39px;
-    height: 56px;
     background-color: white;
-    text-align: center;
     margin: 0;
     font-size: 16px;
     font-weight: 400;
-    align-items: center;
-    justify-content: center;
+    padding: 18px 15px 19px 15px;
+    max-height: 56px;
+    max-width: 39px;
 
 }
 
@@ -209,6 +205,13 @@ table label {
     z-index: 3;
 }
 
+/*Footer*/
+
+.footer-box p {
+    display: flex;
+    justify-content: center
+}
+
 /* Media quieries */
 
 /*ecran max767px*/
@@ -233,4 +236,40 @@ table label {
         top: -510px;
         max-width: 349px;
     }
+
+    .elementor-17 .elementor-element.elementor-element-b242e88 {
+        flex-wrap: nowrap;
+    }  
+    
+    .tasty {
+        gap: 140px;
+    }
+}
+
+@media screen and (max-width :470px) {
+    .e-con {
+        --padding-inline-end :0;
+        --padding-block-end :0;
+    }
+
+    .site-footer {
+        margin-right: 0;
+    }
+
+    .two_columns {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .column_one {
+        border: none;
+        padding-left: 45px;
+    }
+
+    .tasty {
+        gap: 23%;
+        min-width: 10%;
+        min-height: 10%;
+    }
+
 }
