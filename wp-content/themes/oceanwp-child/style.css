@@ -182,22 +182,34 @@ table label {
 
 
 /*images superposées des feuilles avec la canette*/
-.wp-image-557 { /*feuille de gauche*/
+
+
+.wp-image-557{ /* image feuille de gauche*/
+    position: relative;
+    left: 50%;
+    bottom: -70%;
+}
+
+.elementor-element.elementor-element-973acc9 { /*feuille de gauche*/
     z-index: 1;
     position: relative;
-    left: 102% ;
-    top: 70% ;
+    left: 13% ;
     max-width: 100%;
     height: auto;
 }
 
-.wp-image-558 { /* feuille de droite */
+.elementor-element.elementor-element-7149e2d { /* conteneur feuille de droite */
     z-index: 2;
     position: relative;
-    right: 102%;
-    top: 70%;
+    right: 13%;
     max-width: 100%;
     height: auto;
+}
+
+.wp-image-558 { /*image feuille de droite*/
+    position: relative;
+    right: 50%;
+    bottom: -70%;
 }
 
 .wp-image-31 { /* image de la canette*/
@@ -227,16 +239,15 @@ table label {
     }
 
     .wp-image-557  { /*image de la feuille gauche en page d'accueil*/
-        left: -23%;
-        top: 138%;
+        left: 19%;
+        top: 20%;
     }
 
     .wp-image-558 { /*image de la feuille droite en page d'accueil*/
-        right: -23%;
-        top: -127%;
+        right: 19%;
+        top: 20%;
     }
     
-
     .elementor-17 .elementor-element.elementor-element-b242e88 {
         flex-wrap: nowrap;
     }  
@@ -245,15 +256,7 @@ table label {
         gap: 140px;
     }
 }
-@media screen and (max-width:593px) {
-    
-    .wp-image-31 { /*image de la canette en page d'accueil*/
-        max-width: 50%;
-    }
-    .wp-image-558 { /*image de la feuille droite en page d'accueil*/
-        max-width: 50%;
-    }
-}
+
 @media screen and (max-width :470px) {
     .e-con {
         --padding-inline-end :0;
@@ -264,9 +267,7 @@ table label {
         margin-right: 0;
     }
 
-    .elementor-element-561373e {
-        max-width: 50%;
-    }
+ 
 
     .two_columns {
         display: flex;
