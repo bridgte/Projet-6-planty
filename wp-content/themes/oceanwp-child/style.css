@@ -13,11 +13,6 @@ Updated: 2024-02-09 10:49:57
 
 /* HEADER */
 
-.e-con { /* enlever les écarts en bas et à droite de la page du thème*/
-    --padding-inline-end :0;
-    --padding-block-end :0;
-}
-
 #site-logo { /* logo du site*/
     display: flex;
     width: 201px;
@@ -36,6 +31,7 @@ Updated: 2024-02-09 10:49:57
     background-color: #dc9f96;
     width: 236px;
     height: 80px;
+    margin-right: 2px;
 }
 
 .menu-item-54 span { /* écriture du bouton commander*/
@@ -54,8 +50,6 @@ Updated: 2024-02-09 10:49:57
 .main-menu li:nth-child(2) {
     order: 1; /* nouvel ordre du menu admin*/
 }
-
-
 
 /* FORMUALIRE PAGE COMMANDER */
 
@@ -163,8 +157,6 @@ table label { /* Mise en forme des titres de cases à remplir du formulaire */
 /* PAGE D'ACCUEIL*/
 
 /*images superposées des feuilles avec la canette sur la page d'accueil */
-
-
 .wp-image-557{ /* positionnement de l'image feuille de gauche */
     position: relative;
     left: 50%;
@@ -198,6 +190,7 @@ table label { /* Mise en forme des titres de cases à remplir du formulaire */
     z-index: 3;
 }
 
+
 /*Footer*/
 
 .footer-box p { /* centrer le footer sur la page */
@@ -226,7 +219,7 @@ table label { /* Mise en forme des titres de cases à remplir du formulaire */
     }
 
     .wp-image-558 { /*image de la feuille droite en page d'accueil */
-        right: 19%;
+        right: 22%;
         top: 20%;
     }
     
