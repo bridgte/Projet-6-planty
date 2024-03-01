@@ -137,20 +137,17 @@ table label { /* Mise en forme des titres de cases à remplir du formulaire */
     justify-content: center;
 }
 
-.elementor-element-3f46b63 {
-    max-width:  193px ;
-}
 
 /* FORMULAIRE PAGE NOUS RENCONTRER */
 
-.button_submit {
+.button_submit { /* bouton envoyer */
     display: flex;
     justify-content: center;
     height: 55px;
     align-items: flex-start;
 }
 
-.wpcf7 input[type="textarea"] {
+.wpcf7 input[type="textarea"] { /* zone de texte du message */
     width: 100%;
     min-height: 237px;
     border: 0px;
@@ -158,24 +155,23 @@ table label { /* Mise en forme des titres de cases à remplir du formulaire */
 }
 
 .elementor-element.elementor-element-26db7b1:not(.elementor-motion-effects-element-type-background) {
+/* positionnement de la fleur en arrière plan */
    background-position-x: 36%;
    background-position-y: 89%;
 }
 
 /* PAGE D'ACCUEIL*/
 
+/*images superposées des feuilles avec la canette sur la page d'accueil */
 
 
-/*images superposées des feuilles avec la canette*/
-
-
-.wp-image-557{ /* image feuille de gauche*/
+.wp-image-557{ /* positionnement de l'image feuille de gauche */
     position: relative;
     left: 50%;
     bottom: -70%;
 }
 
-.elementor-element.elementor-element-973acc9 { /*feuille de gauche*/
+.elementor-element.elementor-element-973acc9 { /* réorganisation du positionnement du conteneur de la feuille de gauche */
     z-index: 1;
     position: relative;
     left: 13% ;
@@ -183,7 +179,7 @@ table label { /* Mise en forme des titres de cases à remplir du formulaire */
     height: auto;
 }
 
-.elementor-element.elementor-element-7149e2d { /* conteneur feuille de droite */
+.elementor-element.elementor-element-7149e2d { /* réorganisation du positionnement du conteneur de la feuille de droite */
     z-index: 2;
     position: relative;
     right: 13%;
@@ -191,80 +187,81 @@ table label { /* Mise en forme des titres de cases à remplir du formulaire */
     height: auto;
 }
 
-.wp-image-558 { /*image feuille de droite*/
+.wp-image-558 { /* positionnement de l'image de la feuille de droite */
     position: relative;
     right: 50%;
     bottom: -70%;
 }
 
-.wp-image-31 { /* image de la canette*/
+.wp-image-31 { /* réorganisation de l'ordre de positionnement de l'image de la canette */
     position: relative;
     z-index: 3;
 }
 
 /*Footer*/
 
-.footer-box p {
+.footer-box p { /* centrer le footer sur la page */
     display: flex;
     justify-content: center
 }
 
+
 /* Media quieries */
 
-/*ecran max767px*/
+/* ecran max767px format smartphone paysage ou petite tablette */
 @media screen and (max-width :767px) {
 
-    .elementor-element-3f46b63 { /*ajustement photos et quantité du formulaire de commande*/
+    .elementor-element-3f46b63 { /*ajustement photos et quantité du formulaire de commande */
         flex-wrap: nowrap;
         flex-direction: row;
         min-width: 100%
     }
-    .button_delivery { /* ajustement bouton commander du formulaire de commande*/
+    .button_delivery { /* ajustement bouton commander du formulaire de commande */
         min-width: 100%;
     }
 
-    .wp-image-557  { /*image de la feuille gauche en page d'accueil*/
+    .wp-image-557  { /*image de la feuille gauche en page d'accueil */
         left: 19%;
         top: 20%;
     }
 
-    .wp-image-558 { /*image de la feuille droite en page d'accueil*/
+    .wp-image-558 { /*image de la feuille droite en page d'accueil */
         right: 19%;
         top: 20%;
     }
     
-    .elementor-17 .elementor-element.elementor-element-b242e88 {
+    .elementor-17 .elementor-element.elementor-element-b242e88 { 
+    /* réorganisation pour garder en ligne les 4 photos des goûts de la page commander */
         flex-wrap: nowrap;
     }  
     
-    .tasty {
+    .tasty { /* Espacement des cases 0 du formulaire de commande */
         gap: 140px;
     }
 }
 
 @media screen and (max-width :470px) {
-    .e-con {
+/* format smartphone en portrait */
+    .e-con { /* supprimer les padding autour des pages */
         --padding-inline-end :0;
         --padding-block-end :0;
     }
 
-    .site-footer {
+    .site-footer { /* alignement du footer */
         margin-right: 0;
     }
 
- 
-
-    .two_columns {
+    .two_columns { /* diviser le formulaire en 2 colonnes à la suite */
         display: flex;
         flex-direction: column;
     }
 
-    .column_one {
+    .column_one { /* mise en page de la colonne "vos informations" du formulaire de commande */
         border: none;
         padding-left: 45px;
     }
 
-    .tasty {
+    .tasty { /* mise en forme des cases de quantité du formulaire de commande */
         gap: 23%;
         min-width: 10%;
         min-height: 10%;
