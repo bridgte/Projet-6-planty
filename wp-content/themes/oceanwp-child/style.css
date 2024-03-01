@@ -13,120 +13,101 @@ Updated: 2024-02-09 10:49:57
 
 /* HEADER */
 
-.e-con {
+.e-con { /* enlever les écarts en bas et à droite de la page du thème*/
     --padding-inline-end :0;
     --padding-block-end :0;
 }
 
-.menu_item {
-    background-color: black;
-    color: black;
+#site-logo { /* logo du site*/
+    display: flex;
+    width: 201px;
+    height: 19px;
+    padding-left: 37px;
+    padding-top: 21px ;
 }
+
+.dropdown-menu { /* menu navigation*/
+    display: flex;
+    flex-direction: row;
+    gap: 77px;
+}
+
+.menu-item-54 { /* bouton commander*/
+    background-color: #dc9f96;
+    width: 236px;
+    height: 80px;
+}
+
+.menu-item-54 span { /* écriture du bouton commander*/
+    color: white;
+}
+
+.text-wrap { /* texte du menu nav nous rencontrer et commander*/
+    display: flex;
+    justify-content: center;
+}
+
+#site-navigation-wrap .dropdown-menu>li>a { /* police du menu nav*/
+    font-size: 16px;
+}
+
+.main-menu li:nth-child(2) {
+    order: 1; /* nouvel ordre du menu admin*/
+}
+
+
+
 /* FORMUALIRE PAGE COMMANDER */
 
-.quantity {
+
+.quantity { /* bloc des boutons de quantité sous les images des goûts*/
     display: flex;
     flex-direction: row;
-    gap: 26px;
     border-bottom: 1px solid white;
-    padding-bottom: 40px;
-}
-
-.quantity_button {
-    display: flex;
-    flex-direction: row;
-    height: 56px;
-
-}
-
-.plus_moins {
-    display: flex;
-    flex-direction: column;
+    padding-bottom: 30px;
     justify-content: center;
     align-items: center;
 }
 
-.plus, .moins {
-    display: flex;
-    width: 31px;
-    height: 28px;
-    background-color: #dc9f96;
-    margin: 0;
-    text-align: center;
-    color: white;
-    justify-content: center;
-    align-items: center;
-
-}
-
-.plus {
-    border-radius: 0px 10px 0px 0px;
-    border-bottom: 1px white solid;
-}
-
-.moins {
-    border-radius: 0px 0px 10px 0px;
-}
-
-.bouton_ok {
+.tasty { /* boutons de quantité*/
     display: flex;
     flex-direction: row;
-    width: 100px;
-    height: 56px;
-    background-color: #e0b9b4;
-    text-align: center;
-    color: white;
-    align-items: center;
+    max-width: 193px;
     justify-content: center;
-    border-radius: 5px;
-    margin-left: 11px;
+    align-items: center;
+    gap: 194px;
 }
 
-.zero {
-    display: flex;
-    flex-direction: row;
-    width: 51px;
-    height: 56px;
+.zero { /* paramétrage des boites contenant le 0 */
     background-color: white;
-    border-top-left-radius: 10px;
-    border-bottom-left-radius: 10px;
-    text-align: center;
     margin: 0;
     font-size: 16px;
     font-weight: 400;
-    align-items: center;
-    justify-content: center;
+    padding: 18px 15px 19px 15px;
+    max-height: 56px;
+    max-width: 39px;
 
 }
 
-h3 {
-    font-size: 30px;
-    font-weight: 700;
-}
-
-hr {
-    color: white;
-}
-
-.column_one {
+.column_one { /* mise en forme colonne "vos informations" du formulaire */
     border-right: 1px solid white;
-    width: 430px;
+    max-width: 430px;
     padding-right: 45px;
     margin-bottom: 0px;
 
 }
 
-.column_two {
-    width: 430px;
+.column_two { /* mise en forme colonne "livraison" du formulaire */
+    max-width: 430px;
     padding-left: 45px;
     margin-bottom: 0px;
 }
- .form {
+ .form { /* formulaire */
     margin-top: 55px;
     height: 447px;
  }
 
-table label {
+table label { /* Mise en forme des titres de cases à remplir du formulaire */
     color: white;
     font-size: 20px;
     font-weight: 400;
@@ -134,14 +115,14 @@ table label {
 
 .wpcf7 input[type="text"],
 .wpcf7 input[type="email"],
-.wpcf7 input[type="textarea"] {
+.wpcf7 input[type="textarea"] { /* mise en forme des champs du formulaire*/
     background-color: white;
     border-radius: 7px;
     margin-top: 13px;
     margin-bottom: 30px;
 }
 
-.wpcf7 input[type="submit"] {
+.wpcf7 input[type="submit"] { /*mise en forme bouton commander*/
     display: flex;
     width: 198px;
     height: 55px;
@@ -149,8 +130,17 @@ table label {
     align-items: center;
     border-radius: 5px;
     background-color: #E0B9B4;
-    margin: 30px 318px 93px 339px;  
+      
 }
+.button_delivery { /* bouton commander */
+    display: flex;
+    justify-content: center;
+}
+
+.elementor-element-3f46b63 {
+    max-width:  193px ;
+}
+
 /* FORMULAIRE PAGE NOUS RENCONTRER */
 
 .button_submit {
@@ -161,25 +151,123 @@ table label {
 }
 
 .wpcf7 input[type="textarea"] {
-    width: 383px;
-    height: 237px;
+    width: 100%;
+    min-height: 237px;
     border: 0px;
     margin-bottom: 0px;
 }
 
+.elementor-element.elementor-element-26db7b1:not(.elementor-motion-effects-element-type-background) {
+   background-position-x: 36%;
+   background-position-y: 89%;
+}
+
 /* PAGE D'ACCUEIL*/
 
-.wp-image-31 {
+
+
+/*images superposées des feuilles avec la canette*/
+
+
+.wp-image-557{ /* image feuille de gauche*/
     position: relative;
-}
-.elementor-element-dca781a::before {
-    background-position: absolute;
-    background-position-x: 34.5%;
-    background-position-y: 69.5%;
+    left: 50%;
+    bottom: -70%;
 }
 
-.elementor-element-dca781a:not(.elementor-motion-effects-element-type-background) {
-    background-position-x: 65.5%;
-    background-position-y: 69.5%;
+.elementor-element.elementor-element-973acc9 { /*feuille de gauche*/
+    z-index: 1;
+    position: relative;
+    left: 13% ;
+    max-width: 100%;
+    height: auto;
 }
 
+.elementor-element.elementor-element-7149e2d { /* conteneur feuille de droite */
+    z-index: 2;
+    position: relative;
+    right: 13%;
+    max-width: 100%;
+    height: auto;
+}
+
+.wp-image-558 { /*image feuille de droite*/
+    position: relative;
+    right: 50%;
+    bottom: -70%;
+}
+
+.wp-image-31 { /* image de la canette*/
+    position: relative;
+    z-index: 3;
+}
+
+/*Footer*/
+
+.footer-box p {
+    display: flex;
+    justify-content: center
+}
+
+/* Media quieries */
+
+/*ecran max767px*/
+@media screen and (max-width :767px) {
+
+    .elementor-element-3f46b63 { /*ajustement photos et quantité du formulaire de commande*/
+        flex-wrap: nowrap;
+        flex-direction: row;
+        min-width: 100%
+    }
+    .button_delivery { /* ajustement bouton commander du formulaire de commande*/
+        min-width: 100%;
+    }
+
+    .wp-image-557  { /*image de la feuille gauche en page d'accueil*/
+        left: 19%;
+        top: 20%;
+    }
+
+    .wp-image-558 { /*image de la feuille droite en page d'accueil*/
+        right: 19%;
+        top: 20%;
+    }
+    
+    .elementor-17 .elementor-element.elementor-element-b242e88 {
+        flex-wrap: nowrap;
+    }  
+    
+    .tasty {
+        gap: 140px;
+    }
+}
+
+@media screen and (max-width :470px) {
+    .e-con {
+        --padding-inline-end :0;
+        --padding-block-end :0;
+    }
+
+    .site-footer {
+        margin-right: 0;
+    }
+
+ 
+
+    .two_columns {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .column_one {
+        border: none;
+        padding-left: 45px;
+    }
+
+    .tasty {
+        gap: 23%;
+        min-width: 10%;
+        min-height: 10%;
+    }
+
+}
